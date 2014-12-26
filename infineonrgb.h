@@ -8,6 +8,7 @@
 *
 *	\section	HISTORY
 *	v1.0            Derived from the Example Library from Infineon
+*	v1.1			Added The SaveParameter()
 *
 * I put a lot of time and effort into our project and hence this copyright 
 * notice ensures that people contribute as well as each contribution is 
@@ -90,6 +91,7 @@ class InfineonRGB{
 		void SetCurrentRGB(unsigned char Red, unsigned char Green, unsigned char Blue);
 		void SetFadeRate(unsigned char FRate);
 		void SetWalkTime(unsigned char WTime);
+		void SaveParameters(void);
 		void SetColor(uint8_t Colour);
 		void I2CWRITE2BYTES (int Address, int Command, unsigned int Data);
 		void I2CWRITE6BYTES (unsigned int Address, unsigned int Command, unsigned int DataOne, unsigned int DataTwo, unsigned int DataThree); // DataOne: Red, DataTwo: Green, DataThree: Blue

@@ -8,6 +8,7 @@
 *
 *	\section	HISTORY
 *	v1.0            Derived from the Example Library from InfineonRGB
+*	v1.1			Added The SaveParameter() 
 *
 * I put a lot of time and effort into our project and hence this copyright 
 * notice ensures that people contribute as well as each contribution is 
@@ -134,6 +135,10 @@ void InfineonRGB::SetFadeRate(unsigned char FRate){
 
 void InfineonRGB::SetWalkTime(unsigned char WTime){
 	I2CWRITE2BYTES (ADDRESS, WALKTIME, WTime);// 0F);
+}
+
+void InfineonRGB::SaveParameters(void){		// Save parameters to EEPROM
+	I2CSAVEPARAM(ADDRESS);
 }
 // ----------------------------------------------------------------------------
 void InfineonRGB:: I2CWRITE2BYTES (int Address, int Command, unsigned int Data)

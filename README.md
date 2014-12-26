@@ -20,3 +20,5 @@ Revision History
 
 Version 1.0
 First Release. Has basic functions to get you going.
+
+v1.1			Added The SaveParameter()
